@@ -12,7 +12,19 @@
 
 @layer base {
   body {
-    @apply font-overpass;
     @apply font-ubuntu;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-overpass;
+  }
+}
+
+@layer utilities {
+  .iconShadow {
+    filter: drop-shadow(0 0 3px rgb(0 0 0 / 0.3));
   }
 }
