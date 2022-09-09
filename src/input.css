@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Gradients
+    very light red: hsl(13, 100%, 72%)
+    light red: hsl(353, 100%, 62%)
+
+    very dark gray blue: hsl(237, 17%, 21%)
+    very dark desaturated blue: hsl(237, 23%, 32%)
+*/
+
+@layer base {
+  body {
+    @apply font-overpass;
+    @apply font-ubuntu;
+  }
+}

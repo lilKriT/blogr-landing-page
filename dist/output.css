@@ -410,6 +410,11 @@ video {
   height: auto;
 }
 
+body {
+  font-family: Overpass, sans-serif;
+  font-family: Ubuntu, sans-serif;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -551,12 +556,28 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.text-pink-500 {
-  --tw-text-opacity: 1;
-  color: rgb(236 72 153 / var(--tw-text-opacity));
+.font-overpass {
+  font-family: Overpass, sans-serif;
+}
+
+.font-ubuntu {
+  font-family: Ubuntu, sans-serif;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-emerald-500 {
   --tw-text-opacity: 1;
   color: rgb(16 185 129 / var(--tw-text-opacity));
 }
+
+/* Gradients
+    very light red: hsl(13, 100%, 72%)
+    light red: hsl(353, 100%, 62%)
+
+    very dark gray blue: hsl(237, 17%, 21%)
+    very dark desaturated blue: hsl(237, 23%, 32%)
+*/
