@@ -562,6 +562,14 @@ h1,
   --tw-backdrop-sepia:  ;
 }
 
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
 .iconShadow {
   filter: drop-shadow(0 0 3px rgb(0 0 0 / 0.3));
 }
@@ -573,3 +581,7 @@ h1,
     very dark gray blue: hsl(237, 17%, 21%)
     very dark desaturated blue: hsl(237, 23%, 32%)
 */
+
+.group:hover .group-hover\:flex {
+  display: flex;
+}
