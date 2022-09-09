@@ -4,7 +4,8 @@
   "description": "A landing page for a fictional company \"Blogr\". Also, a challenge for FrontEnd Mentor.\r Created by lilKriT.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/lilKriT/blogr-landing-page/issues"
   },
-  "homepage": "https://github.com/lilKriT/blogr-landing-page#readme"
+  "homepage": "https://github.com/lilKriT/blogr-landing-page#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
 }
