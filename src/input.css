@@ -11,6 +11,11 @@
 */
 
 @layer base {
+  /* For testing purposes */
+  * {
+    outline: 1px solid red;
+  }
+
   body {
     @apply font-ubuntu;
   }

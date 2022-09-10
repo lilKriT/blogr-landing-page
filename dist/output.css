@@ -410,6 +410,12 @@ video {
   height: auto;
 }
 
+/* For testing purposes */
+
+* {
+  outline: 1px solid red;
+}
+
 body {
   font-family: Ubuntu, sans-serif;
 }
@@ -576,13 +582,17 @@ h1,
   font-weight: 700;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .ml-auto {
@@ -597,8 +607,8 @@ h1,
   display: none;
 }
 
-.min-h-screen {
-  min-height: 100vh;
+.min-h-\[70vh\] {
+  min-height: 70vh;
 }
 
 .w-full {
@@ -615,6 +625,10 @@ h1,
 
 .justify-center {
   justify-content: center;
+}
+
+.rounded-bl-\[10rem\] {
+  border-bottom-left-radius: 10rem;
 }
 
 .bg-emerald-600 {
@@ -659,7 +673,3 @@ h1,
     very dark gray blue: hsl(237, 17%, 21%)
     very dark desaturated blue: hsl(237, 23%, 32%)
 */
-
-.group:hover .group-hover\:flex {
-  display: flex;
-}

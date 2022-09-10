@@ -27,17 +27,19 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="bg-emerald-600 flex justify-center">
-      <nav class="flex items-center w-full bg-pink-600 max-w-6xl mx-4 mt-8">
+    <header class="w-full bg-emerald-600 flex justify-center fixed">
+      <!-- Navigation starts here -->
+      <nav class="flex items-center w-full bg-pink-600 max-w-6xl mx-4 mt-10">
         <!-- Logo -->
         <a href="#"
           ><img src="./images/logo.svg" alt="Blogr Logo" class="iconShadow"
         /></a>
+
         <!-- Dropdown menu items -->
         <menu class="flex">
           <li class="group">
             <a href="#" class="navItem">Product</a>
-            <menu class="hidden group-hover:flex">
+            <menu class="hidden sgroup-hover:flex">
               <li><a href="#" class="navItem">Overview</a></li>
               <li><a href="#">Pricing</a></li>
               <li><a href="#">Marketplace</a></li>
@@ -47,7 +49,7 @@
           </li>
           <li class="group">
             <a href="#" class="navItem">Company</a>
-            <menu class="hidden group-hover:flex">
+            <menu class="hidden sgroup-hover:flex">
               <li><a href="#">About</a></li>
               <li><a href="#">Team</a></li>
               <li><a href="#">Blog</a></li>
@@ -56,7 +58,7 @@
           </li>
           <li class="group">
             <a href="#" class="navItem">Connect</a>
-            <menu class="hidden group-hover:flex">
+            <menu class="hidden sgroup-hover:flex">
               <li><a href="#">Contact</a></li>
               <li><a href="#">Newsletter</a></li>
               <li><a href="#">LinkedIn</a></li>
@@ -74,7 +76,7 @@
     <main>
       <!-- Hero Section -->
       <section
-        class="min-h-screen heroGradient flex justify-center items-center"
+        class="min-h-[70vh] heroGradient flex justify-center items-center rounded-bl-[10rem]"
         id="heroSection"
       >
         <div class="max-w-6xl mx-4 text-white text-center">
@@ -141,19 +143,28 @@
         </p>
       </section>
     </main>
+
+    <!-- Footer -->
     <footer>
+      <!-- Column 1 -->
       <div>
         <a href="#"><img src="./images/logo.svg" alt="Blogr Logo" /></a>
       </div>
+
+      <!-- Column 2 -->
       <div>
         <a href="#">Product</a><a href="#">Overview</a><a href="#">Pricing</a
         ><a href="#">Marketplace</a><a href="#">Features</a
         ><a href="#">Integrations</a>
       </div>
+
+      <!-- Column 3 -->
       <div>
         <a href="#">Company</a><a href="#">About</a><a href="#">Team</a
         ><a href="#">Blog</a><a href="#">Careers</a>
       </div>
+
+      <!-- Column 4 -->
       <div>
         <a href="#">Connect</a><a href="#">Contact</a><a href="#">Newsletter</a
         ><a href="#">LinkedIn</a>
