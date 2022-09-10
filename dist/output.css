@@ -569,6 +569,13 @@ h1,
   color: hsl(0 0% 100% / var(--tw-text-opacity));
 }
 
+.btn {
+  border-radius: 9999px;
+  border-width: 1px;
+  padding: 1rem;
+  font-weight: 700;
+}
+
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -620,15 +627,25 @@ h1,
   background-color: rgb(219 39 119 / var(--tw-bg-opacity));
 }
 
-.bg-yellow-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(202 138 4 / var(--tw-bg-opacity));
+.text-center {
+  text-align: center;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 100% / var(--tw-text-opacity));
 }
 
 .heroGradient {
   background-image: url("../images/bg-pattern-intro-desktop.svg"),
       linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
-  background-size: cover;
+  /* background-image: url("../images/bg-pattern-intro-desktop.svg"); */
+  background-size: 1920px;
 }
 
 .iconShadow {

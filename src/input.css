@@ -27,13 +27,18 @@
   .navItem {
     @apply text-white bg-yellow-600;
   }
+
+  .btn {
+    @apply p-4 border rounded-full font-bold;
+  }
 }
 
 @layer utilities {
   .heroGradient {
     background-image: url("../images/bg-pattern-intro-desktop.svg"),
       linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
-    background-size: cover;
+    /* background-image: url("../images/bg-pattern-intro-desktop.svg"); */
+    background-size: 1920px;
   }
 
   .iconShadow {
