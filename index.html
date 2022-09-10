@@ -27,8 +27,8 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <nav class="flex">
+    <header class="bg-emerald-600 flex justify-center">
+      <nav class="flex items-center w-full bg-pink-600 max-w-6xl mx-4">
         <!-- Logo -->
         <a href="#"
           ><img src="./images/logo.svg" alt="Blogr Logo" class="iconShadow"
@@ -36,9 +36,9 @@
         <!-- Dropdown menu items -->
         <menu class="flex">
           <li class="group">
-            <a href="#">Product</a>
+            <a href="#" class="navItem">Product</a>
             <menu class="hidden group-hover:flex">
-              <li><a href="#">Overview</a></li>
+              <li><a href="#" class="navItem">Overview</a></li>
               <li><a href="#">Pricing</a></li>
               <li><a href="#">Marketplace</a></li>
               <li><a href="#">Features</a></li>
@@ -46,7 +46,7 @@
             </menu>
           </li>
           <li class="group">
-            <a href="#">Company</a>
+            <a href="#" class="navItem">Company</a>
             <menu class="hidden group-hover:flex">
               <li><a href="#">About</a></li>
               <li><a href="#">Team</a></li>
@@ -55,7 +55,7 @@
             </menu>
           </li>
           <li class="group">
-            <a href="#">Connect</a>
+            <a href="#" class="navItem">Connect</a>
             <menu class="hidden group-hover:flex">
               <li><a href="#">Contact</a></li>
               <li><a href="#">Newsletter</a></li>
@@ -63,9 +63,9 @@
             </menu>
           </li>
         </menu>
-        <menu>
-          <li><a href="#">Login</a></li>
-          <li><a href="#">Sign Up</a></li>
+        <menu class="flex ml-auto">
+          <li><a href="#" class="navItem">Login</a></li>
+          <li><a href="#" class="navItem">Sign Up</a></li>
         </menu>
       </nav>
     </header>

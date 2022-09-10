@@ -23,6 +23,12 @@
   }
 }
 
+@layer components {
+  .navItem {
+    @apply text-white bg-yellow-600;
+  }
+}
+
 @layer utilities {
   .iconShadow {
     filter: drop-shadow(0 0 3px rgb(0 0 0 / 0.3));
