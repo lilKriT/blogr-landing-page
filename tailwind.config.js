@@ -16,6 +16,10 @@ module.exports = {
         overpass: ["Overpass", "sans-serif"],
         ubuntu: ["Ubuntu", "sans-serif"],
       },
+      backgroundImage: {
+        hero: "url('./images/bg-pattern-intro-desktop.svg')",
+        heroM: "url('./images/bg-pattern-intro-mobile.svg')",
+      },
     },
   },
   plugins: [],
