@@ -64,11 +64,26 @@
     content: none;
   }
 
-  #future-section {
-    @apply bg-future bg-no-repeat;
+  #future {
+    @apply bg-future bg-no-repeat font-overpass text-veryDarkBlue;
     background-size: 60%;
-    background-position: left calc(100vh + 15%) center;
-    /* background-color: pink; */
+    background-position: left calc(100vh + 15%) top;
+  }
+
+  #future :is(h2, h3) {
+    @apply font-bold;
+  }
+
+  #future h3 {
+    @apply mt-14;
+  }
+
+  #future h3 + p {
+    @apply mt-6;
+  }
+
+  #future p {
+    @apply leading-relaxed;
   }
 }
 
