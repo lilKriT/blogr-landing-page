@@ -413,7 +413,7 @@ video {
 /* For testing purposes */
 
 * {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 body {
@@ -569,13 +569,26 @@ h1,
 }
 
 .navItem {
-  --tw-bg-opacity: 1;
-  background-color: rgb(202 138 4 / var(--tw-bg-opacity));
+  padding: 1rem;
   --tw-text-opacity: 1;
   color: hsl(0 0% 100% / var(--tw-text-opacity));
 }
 
-.btn {
+.solidButton {
+  border-radius: 9999px;
+  border-width: 1px;
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: hsl(356 100% 66% / var(--tw-text-opacity));
+}
+
+.clearButton {
   border-radius: 9999px;
   border-width: 1px;
   padding: 1rem;
@@ -593,6 +606,14 @@ h1,
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mr-8 {
+  margin-right: 2rem;
+}
+
+.-ml-2 {
+  margin-left: -0.5rem;
 }
 
 .ml-auto {
@@ -631,14 +652,8 @@ h1,
   border-bottom-left-radius: 10rem;
 }
 
-.bg-emerald-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(5 150 105 / var(--tw-bg-opacity));
-}
-
-.bg-pink-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(219 39 119 / var(--tw-bg-opacity));
+.p-2 {
+  padding: 0.5rem;
 }
 
 .text-center {

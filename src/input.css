@@ -13,7 +13,7 @@
 @layer base {
   /* For testing purposes */
   * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
   }
 
   body {
@@ -30,10 +30,14 @@
 
 @layer components {
   .navItem {
-    @apply text-white bg-yellow-600;
+    @apply text-white p-4;
   }
 
-  .btn {
+  .solidButton {
+    @apply px-6 py-2 border rounded-full font-bold text-lightRed bg-white;
+  }
+
+  .clearButton {
     @apply p-4 border rounded-full font-bold;
   }
 }
