@@ -585,7 +585,7 @@ h1,
   position: absolute;
   left: 50%;
   transform: translateX(-50%) translateY(-3px);
-  transition: width 0.3s;
+  transition: width 0.3s ease-in-out;
 }
 
 .navItem:hover::after {
@@ -600,6 +600,8 @@ h1,
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-weight: 700;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .solidButton {
@@ -611,7 +613,7 @@ h1,
 
 .solidButton:hover {
   --tw-bg-opacity: 1;
-  background-color: hsl(356 100% 66% / var(--tw-bg-opacity));
+  background-color: hsl(355 100% 74% / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: hsl(0 0% 100% / var(--tw-text-opacity));
 }
@@ -658,6 +660,10 @@ h1,
   min-height: 70vh;
 }
 
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-full {
   width: 100%;
 }
@@ -696,15 +702,21 @@ h1,
   color: hsl(0 0% 100% / var(--tw-text-opacity));
 }
 
-.duration-75 {
-  transition-duration: 75ms;
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .heroGradient {
   background-image: url("../images/bg-pattern-intro-desktop.svg"),
       linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
   /* background-image: url("../images/bg-pattern-intro-desktop.svg"); */
-  background-size: 1920px;
+  background-size: 130rem, 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .iconShadow {
@@ -719,8 +731,8 @@ h1,
     very dark desaturated blue: hsl(237, 23%, 32%)
 */
 
-.hover\:scale-105:hover {
-  --tw-scale-x: 1.05;
-  --tw-scale-y: 1.05;
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
