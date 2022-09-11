@@ -30,15 +30,38 @@
 
 @layer components {
   .navItem {
-    @apply text-white p-4;
+    @apply text-white p-4 relative;
+  }
+
+  .navItem::after {
+    content: "";
+    height: 2px;
+    width: 0px;
+    background-color: white;
+    border-radius: 100px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-3px);
+    transition: width 0.3s;
+  }
+
+  .navItem:hover::after {
+    width: calc(100% - 2rem);
+  }
+
+  .solidButton,
+  .clearButton {
+    @apply px-6 py-2 rounded-full font-bold;
   }
 
   .solidButton {
-    @apply px-6 py-2 border rounded-full font-bold text-lightRed bg-white;
+    @apply text-lightRed bg-white hover:text-white hover:bg-lightRed;
   }
 
-  .clearButton {
-    @apply p-4 border rounded-full font-bold;
+  .solidButton::after,
+  .clearButton::after {
+    content: none;
   }
 }
 

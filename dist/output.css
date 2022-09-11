@@ -569,30 +569,56 @@ h1,
 }
 
 .navItem {
+  position: relative;
   padding: 1rem;
   --tw-text-opacity: 1;
   color: hsl(0 0% 100% / var(--tw-text-opacity));
 }
 
-.solidButton {
+.navItem::after {
+  content: "";
+  height: 2px;
+  width: 0px;
+  background-color: white;
+  border-radius: 100px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-3px);
+  transition: width 0.3s;
+}
+
+.navItem:hover::after {
+  width: calc(100% - 2rem);
+}
+
+.solidButton, 
+  .clearButton {
   border-radius: 9999px;
-  border-width: 1px;
-  --tw-bg-opacity: 1;
-  background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-weight: 700;
+}
+
+.solidButton {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: hsl(356 100% 66% / var(--tw-text-opacity));
 }
 
-.clearButton {
-  border-radius: 9999px;
-  border-width: 1px;
-  padding: 1rem;
-  font-weight: 700;
+.solidButton:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(356 100% 66% / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 100% / var(--tw-text-opacity));
+}
+
+.solidButton::after,
+  .clearButton::after {
+  content: none;
 }
 
 .fixed {
@@ -670,6 +696,10 @@ h1,
   color: hsl(0 0% 100% / var(--tw-text-opacity));
 }
 
+.duration-75 {
+  transition-duration: 75ms;
+}
+
 .heroGradient {
   background-image: url("../images/bg-pattern-intro-desktop.svg"),
       linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
@@ -688,3 +718,9 @@ h1,
     very dark gray blue: hsl(237, 17%, 21%)
     very dark desaturated blue: hsl(237, 23%, 32%)
 */
+
+.hover\:scale-105:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
