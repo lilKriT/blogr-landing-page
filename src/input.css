@@ -95,6 +95,11 @@
   #infrastructure {
     border-radius: 0 5rem;
   }
+
+  /* Footer */
+  footer > div > div {
+    @apply flex flex-col;
+  }
 }
 
 @layer utilities {
