@@ -63,6 +63,13 @@
   .clearButton::after {
     content: none;
   }
+
+  #future-section {
+    @apply bg-future bg-no-repeat;
+    background-size: 60%;
+    background-position: left calc(100vh + 15%) center;
+    /* background-color: pink; */
+  }
 }
 
 @layer utilities {
