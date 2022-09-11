@@ -16,10 +16,12 @@
     /* outline: 1px solid red; */
   }
 
+  /* Body font */
   body {
     @apply font-ubuntu;
   }
 
+  /* Headers fonts */
   h1,
   h2,
   h3,
@@ -29,6 +31,7 @@
 }
 
 @layer components {
+  /* Navigation items */
   .navItem {
     @apply text-white p-4 relative;
   }
@@ -50,6 +53,7 @@
     width: calc(100% - 2rem);
   }
 
+  /* Buttons */
   .solidButton,
   .clearButton {
     @apply px-6 py-2 rounded-full font-bold duration-300 ease-in-out;
@@ -64,6 +68,7 @@
     content: none;
   }
 
+  /* Future section */
   #future {
     @apply bg-future bg-no-repeat font-overpass text-veryDarkBlue;
     background-size: 60%;
@@ -85,9 +90,15 @@
   #future p {
     @apply leading-relaxed;
   }
+
+  /* Infrastructure section */
+  #infrastructure {
+    border-radius: 0 5rem;
+  }
 }
 
 @layer utilities {
+  /* Gradients */
   .heroGradient {
     background-image: url("../images/bg-pattern-intro-desktop.svg"),
       linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
@@ -95,6 +106,14 @@
     background-size: 130rem, 100%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
+  }
+
+  .infrastructureGradient {
+    background-image: linear-gradient(
+      to right,
+      hsl(237, 17%, 21%),
+      hsl(237, 23%, 32%)
+    );
   }
 
   .iconShadow {

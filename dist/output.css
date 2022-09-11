@@ -416,9 +416,13 @@ video {
   /* outline: 1px solid red; */
 }
 
+/* Body font */
+
 body {
   font-family: Ubuntu, sans-serif;
 }
+
+/* Headers fonts */
 
 h1, 
   h2, 
@@ -568,6 +572,8 @@ h1,
   --tw-backdrop-sepia:  ;
 }
 
+/* Navigation items */
+
 .navItem {
   position: relative;
   padding: 1rem;
@@ -591,6 +597,8 @@ h1,
 .navItem:hover::after {
   width: calc(100% - 2rem);
 }
+
+/* Buttons */
 
 .solidButton, 
   .clearButton {
@@ -623,6 +631,8 @@ h1,
   content: none;
 }
 
+/* Future section */
+
 #future {
   background-image: url('../images/illustration-editor-desktop.svg');
   background-repeat: no-repeat;
@@ -647,6 +657,12 @@ h1,
 
 #future p {
   line-height: 1.625;
+}
+
+/* Infrastructure section */
+
+#infrastructure {
+  border-radius: 0 5rem;
 }
 
 .fixed {
@@ -686,6 +702,14 @@ h1,
   display: none;
 }
 
+.h-\[40vh\] {
+  height: 40vh;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .min-h-\[70vh\] {
   min-height: 70vh;
 }
@@ -704,6 +728,10 @@ h1,
 
 .max-w-6xl {
   max-width: 72rem;
+}
+
+.basis-1\/2 {
+  flex-basis: 50%;
 }
 
 .items-center {
@@ -759,6 +787,8 @@ h1,
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Gradients */
+
 .heroGradient {
   background-image: url("../images/bg-pattern-intro-desktop.svg"),
       linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
@@ -766,6 +796,14 @@ h1,
   background-size: 130rem, 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+}
+
+.infrastructureGradient {
+  background-image: linear-gradient(
+      to right,
+      hsl(237, 17%, 21%),
+      hsl(237, 23%, 32%)
+    );
 }
 
 .iconShadow {
