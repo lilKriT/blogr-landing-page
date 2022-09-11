@@ -668,8 +668,20 @@ h1,
   width: 100%;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .max-w-6xl {
   max-width: 72rem;
+}
+
+.basis-1\/2 {
+  flex-basis: 50%;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -688,8 +700,22 @@ h1,
   padding: 0.5rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.font-overpass {
+  font-family: Overpass, sans-serif;
 }
 
 .text-6xl {
@@ -697,9 +723,46 @@ h1,
   line-height: 1;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.leading-3 {
+  line-height: .75rem;
+}
+
+.leading-normal {
+  line-height: 1.5;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: hsl(0 0% 100% / var(--tw-text-opacity));
+}
+
+.text-veryDarkBlackBlue {
+  --tw-text-opacity: 1;
+  color: hsl(240 10% 16% / var(--tw-text-opacity));
+}
+
+.text-veryDarkBlue {
+  --tw-text-opacity: 1;
+  color: hsl(208 49% 24% / var(--tw-text-opacity));
 }
 
 .duration-300 {
