@@ -677,6 +677,11 @@ header {
   border-radius: 0 5rem;
 }
 
+#infrastructure > img {
+  width: 200px;
+  aspect-ratio: 0.953;
+}
+
 /* Features section */
 
 #features {
@@ -790,10 +795,6 @@ footer .navColumn > *:first-child {
 
 .h-\[40vh\] {
   height: 40vh;
-}
-
-.h-full {
-  height: 100%;
 }
 
 .min-h-\[70vh\] {

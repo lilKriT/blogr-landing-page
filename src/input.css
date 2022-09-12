@@ -105,6 +105,11 @@
     border-radius: 0 5rem;
   }
 
+  #infrastructure > img {
+    width: 200px;
+    aspect-ratio: 0.953;
+  }
+
   /* Features section */
   #features {
     background-image: url("../images/illustration-laptop-desktop.svg");
