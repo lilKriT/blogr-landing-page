@@ -651,8 +651,8 @@ header {
   font-family: Overpass, sans-serif;
   --tw-text-opacity: 1;
   color: hsl(208 49% 24% / var(--tw-text-opacity));
-  background-size: 60%;
-  background-position: left calc(100vh + 15%) top;
+  background-position: right -45% center;
+  background-size: 62vw;
 }
 
 #future :is(h2, h3) {

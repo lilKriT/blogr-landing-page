@@ -80,8 +80,8 @@
   /* Future section */
   #future {
     @apply bg-future bg-no-repeat font-overpass text-veryDarkBlue;
-    background-size: 60%;
-    background-position: left calc(100vh + 15%) top;
+    background-position: right -45% center;
+    background-size: 62vw;
   }
 
   #future :is(h2, h3) {
