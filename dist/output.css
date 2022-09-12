@@ -611,6 +611,7 @@ h1,
   font-weight: 700;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 0 7px rgb(0 0 0 / 0.3);
   text-shadow: none;
 }
 
@@ -673,6 +674,16 @@ header {
 
 #infrastructure {
   border-radius: 0 5rem;
+}
+
+/* Features section */
+
+#features h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: hsl(208 49% 24% / var(--tw-text-opacity));
 }
 
 /* Footer */
@@ -878,6 +889,11 @@ footer .navColumn > *:first-child {
 .text-grayishBlue {
   --tw-text-opacity: 1;
   color: hsl(240 2% 79% / var(--tw-text-opacity));
+}
+
+.text-veryDarkGrayishBlue {
+  --tw-text-opacity: 1;
+  color: hsl(207 13% 34% / var(--tw-text-opacity));
 }
 
 .duration-300 {
