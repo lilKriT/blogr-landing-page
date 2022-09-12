@@ -579,6 +579,7 @@ h1,
   padding: 1rem;
   --tw-text-opacity: 1;
   color: hsl(0 0% 100% / var(--tw-text-opacity));
+  text-shadow: 0px 0px 5px rgb(0 0 0 / 1);
 }
 
 .navItem::after {
@@ -610,6 +611,7 @@ h1,
   font-weight: 700;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  text-shadow: none;
 }
 
 .solidButton {
@@ -629,6 +631,14 @@ h1,
 .solidButton::after,
   .clearButton::after {
   content: none;
+}
+
+/* Header */
+
+header {
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  box-shadow: 0 3px 7px rgb(0 0 0 / 0.2);
 }
 
 /* Future section */
@@ -681,16 +691,6 @@ footer > div > div {
   margin-right: 1rem;
 }
 
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .my-12 {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -714,6 +714,14 @@ footer > div > div {
 
 .mb-20 {
   margin-bottom: 5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .flex {
