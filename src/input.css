@@ -105,11 +105,33 @@
 
   /* Footer */
   footer > div > div {
-    @apply flex flex-col grow gap-1;
+    @apply flex flex-col grow items-start;
   }
 
-  footer > div > div > *:first-child {
-    @apply font-bold mb-2 text-white;
+  footer .navColumn > a {
+    @apply px-2 py-1 relative;
+  }
+
+  footer .navColumn > a::after {
+    content: "";
+    height: 2px;
+    width: 0px;
+    background-color: white;
+    border-radius: 100px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-3px);
+    transition: width 0.3s ease-in-out;
+  }
+
+  footer .navColumn > a:hover::after {
+    width: calc(100% - 1rem);
+  }
+
+  /* Making first item bold */
+  footer .navColumn > *:first-child {
+    @apply font-bold mb-4 text-white;
   }
 }
 

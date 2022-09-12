@@ -681,11 +681,38 @@ footer > div > div {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
-  gap: 0.25rem;
+  align-items: flex-start;
 }
 
-footer > div > div > *:first-child {
-  margin-bottom: 0.5rem;
+footer .navColumn > a {
+  position: relative;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+footer .navColumn > a::after {
+  content: "";
+  height: 2px;
+  width: 0px;
+  background-color: white;
+  border-radius: 100px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-3px);
+  transition: width 0.3s ease-in-out;
+}
+
+footer .navColumn > a:hover::after {
+  width: calc(100% - 1rem);
+}
+
+/* Making first item bold */
+
+footer .navColumn > *:first-child {
+  margin-bottom: 1rem;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: hsl(0 0% 100% / var(--tw-text-opacity));
