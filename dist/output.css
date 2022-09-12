@@ -679,6 +679,13 @@ header {
 
 /* Features section */
 
+#features {
+  background-image: url("../images/illustration-laptop-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: left -54% center;
+  background-size: 65%;
+}
+
 #features h2 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
@@ -841,16 +848,6 @@ footer .navColumn > *:first-child {
   border-bottom-left-radius: 10rem;
 }
 
-.bg-emerald-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(52 211 153 / var(--tw-bg-opacity));
-}
-
-.bg-pink-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(244 114 182 / var(--tw-bg-opacity));
-}
-
 .bg-veryDarkBlackBlue {
   --tw-bg-opacity: 1;
   background-color: hsl(240 10% 16% / var(--tw-bg-opacity));
@@ -899,14 +896,6 @@ footer .navColumn > *:first-child {
 
 .font-light {
   font-weight: 300;
-}
-
-.font-normal {
-  font-weight: 400;
-}
-
-.tracking-wide {
-  letter-spacing: 0.025em;
 }
 
 .tracking-wider {
