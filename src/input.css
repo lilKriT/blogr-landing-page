@@ -47,6 +47,7 @@
     left: 50%;
     transform: translateX(-50%) translateY(-3px);
     transition: width 0.3s ease-in-out;
+    box-shadow: 0 0 3px rgb(0 0 0 / 0.3);
   }
 
   .navItem:hover::after {
@@ -106,7 +107,11 @@
 
   /* Features section */
   #features h2 {
-    @apply text-veryDarkBlue font-bold text-2xl;
+    @apply text-veryDarkBlue font-bold text-2xl mb-4;
+  }
+
+  #features * + h2 {
+    @apply mt-10;
   }
 
   /* Footer */
@@ -127,7 +132,7 @@
     display: block;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%) translateY(-3px);
+    transform: translateX(-50%) translateY(-5px);
     transition: width 0.3s ease-in-out;
   }
 
