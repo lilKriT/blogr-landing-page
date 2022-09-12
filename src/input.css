@@ -105,7 +105,11 @@
 
   /* Footer */
   footer > div > div {
-    @apply flex flex-col;
+    @apply flex flex-col grow gap-1;
+  }
+
+  footer > div > div > *:first-child {
+    @apply font-bold mb-2 text-white;
   }
 }
 

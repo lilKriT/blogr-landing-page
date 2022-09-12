@@ -679,7 +679,16 @@ header {
 
 footer > div > div {
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
+  gap: 0.25rem;
+}
+
+footer > div > div > *:first-child {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 100% / var(--tw-text-opacity));
 }
 
 .fixed {
@@ -700,6 +709,10 @@ footer > div > div {
   margin-top: 2.5rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mr-8 {
   margin-right: 2rem;
 }
@@ -714,14 +727,6 @@ footer > div > div {
 
 .mb-20 {
   margin-bottom: 5rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
 }
 
 .flex {
@@ -793,11 +798,6 @@ footer > div > div {
   background-color: hsl(240 10% 16% / var(--tw-bg-opacity));
 }
 
-.bg-pink-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(244 114 182 / var(--tw-bg-opacity));
-}
-
 .p-2 {
   padding: 0.5rem;
 }
@@ -809,6 +809,10 @@ footer > div > div {
 
 .text-center {
   text-align: center;
+}
+
+.font-overpass {
+  font-family: Overpass, sans-serif;
 }
 
 .text-6xl {
@@ -835,9 +839,18 @@ footer > div > div {
   font-weight: 700;
 }
 
+.font-light {
+  font-weight: 300;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: hsl(0 0% 100% / var(--tw-text-opacity));
+}
+
+.text-grayishBlue {
+  --tw-text-opacity: 1;
+  color: hsl(240 2% 79% / var(--tw-text-opacity));
 }
 
 .duration-300 {
