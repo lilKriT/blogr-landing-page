@@ -13,7 +13,7 @@
 @layer base {
   /* For testing purposes */
   * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
   }
 
   /* Body font */
@@ -64,6 +64,10 @@
 
   .solidButton {
     @apply text-lightRed bg-white hover:text-white hover:bg-veryLightRed;
+  }
+
+  .clearButton {
+    @apply bg-transparent border-white border hover:bg-white hover:text-lightRed;
   }
 
   .solidButton::after,
