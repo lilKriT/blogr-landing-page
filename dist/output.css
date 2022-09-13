@@ -641,6 +641,7 @@ header {
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   box-shadow: 0 3px 7px rgb(0 0 0 / 0.2);
+  z-index: 2;
 }
 
 /* Future section */
@@ -810,8 +811,16 @@ footer .navColumn > *:first-child {
   margin-bottom: 1.5rem;
 }
 
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
 }
 
 .hidden {
@@ -820,6 +829,18 @@ footer .navColumn > *:first-child {
 
 .h-full {
   height: 100%;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .min-h-\[70vh\] {
@@ -842,6 +863,14 @@ footer .navColumn > *:first-child {
   width: auto;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
 .max-w-6xl {
   max-width: 72rem;
 }
@@ -858,6 +887,10 @@ footer .navColumn > *:first-child {
 
 .flex-col {
   flex-direction: column;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -878,6 +911,14 @@ footer .navColumn > *:first-child {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .rounded-bl-\[10rem\] {
@@ -996,4 +1037,8 @@ footer .navColumn > *:first-child {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:flex {
+  display: flex;
 }
