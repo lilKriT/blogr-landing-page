@@ -125,25 +125,34 @@
 
       <!-- Infrastructure Section -->
       <section
-        class="infrastructureGradient text-white h-[40vh] flex"
+        class="infrastructureGradient text-white ah-[10vh] flex justify-center font-overpass"
         id="infrastructure"
       >
-        <div class="basis-1/2 flex justify-center items-center">
-          <img
-            src="./images/illustration-phones.svg"
-            alt="Two phones showing off Blogr Logo and some icons"
-            width="552"
-            height="579"
-          />
-        </div>
-        <div class="basis-1/2 flex flex-col justify-center max-w-xl">
-          <h2 class="text-3xl font-bold">State of the Art Infrastructure</h2>
-          <p>
-            With reliability and speed in mind, worldwide data centers provide
-            the backbone for ultra-fast connectivity. This ensures your site
-            will load instantly, no matter where your readers are, keeping your
-            site competitive.
-          </p>
+        <!-- Wrapper -->
+        <div class="w-full max-w-6xl flex">
+          <!-- Phones Image Column -->
+          <div class="basis-1/2 flex justify-start items-center relative">
+            <img
+              src="./images/illustration-phones.svg"
+              alt="Two phones showing off Blogr Logo and some icons"
+              width="552"
+              height="579"
+              class="absolute h-full w-auto"
+            />
+          </div>
+
+          <!-- Content -->
+          <div class="basis-1/2 flex flex-col justify-center my-20">
+            <h2 class="text-3xl font-bold mb-6">
+              State of the Art Infrastructure
+            </h2>
+            <p class="font-normal">
+              With reliability and speed in mind, worldwide data centers provide
+              the backbone for ultra-fast connectivity. This ensures your site
+              will load instantly, no matter where your readers are, keeping
+              your site competitive.
+            </p>
+          </div>
         </div>
       </section>
 

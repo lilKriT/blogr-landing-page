@@ -413,7 +413,7 @@ video {
 /* For testing purposes */
 
 * {
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 /* Body font */
@@ -751,6 +751,18 @@ footer .navColumn > *:first-child {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -759,6 +771,21 @@ footer .navColumn > *:first-child {
 .my-12 {
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .mt-10 {
@@ -785,6 +812,10 @@ footer .navColumn > *:first-child {
   margin-bottom: 5rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -795,6 +826,22 @@ footer .navColumn > *:first-child {
 
 .h-\[40vh\] {
   height: 40vh;
+}
+
+.\!h-\[40vh\] {
+  height: 40vh !important;
+}
+
+.\!h-\[10vh\] {
+  height: 10vh !important;
+}
+
+.h-\[10vh\] {
+  height: 10vh;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .min-h-\[70vh\] {
@@ -811,6 +858,18 @@ footer .navColumn > *:first-child {
 
 .w-1\/2 {
   width: 50%;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-1\/12 {
+  width: 8.333333%;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .max-w-6xl {
@@ -831,6 +890,10 @@ footer .navColumn > *:first-child {
 
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-end {
@@ -897,6 +960,14 @@ footer .navColumn > *:first-child {
 
 .font-light {
   font-weight: 300;
+}
+
+.font-thin {
+  font-weight: 100;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .tracking-wider {
