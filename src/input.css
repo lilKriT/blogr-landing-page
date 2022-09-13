@@ -164,8 +164,8 @@
     background-image: url("../images/bg-pattern-intro-desktop.svg"),
       linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     /* background-image: url("../images/bg-pattern-intro-desktop.svg"); */
-    background-size: 130rem, 100%;
-    background-position: 50% 50%;
+    background-size: 210vw, 100%;
+    background-position: left -30vw bottom -82vw, center;
     background-repeat: no-repeat;
   }
 
