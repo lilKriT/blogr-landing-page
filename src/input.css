@@ -88,7 +88,7 @@
 
   /* Dropdown menus */
   .navItem + menu {
-    @apply bg-white hidden flex-col absolute left-1/2 -translate-x-1/2 rounded;
+    @apply bg-white hidden flex-col gap-2 absolute left-1/2 -translate-x-1/2 rounded translate-y-3 p-4;
   }
 
   /* Future section */

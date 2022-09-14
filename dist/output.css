@@ -671,11 +671,14 @@ header > nav > menu:first-of-type > li {
   left: 50%;
   display: none;
   --tw-translate-x: -50%;
+  --tw-translate-y: 0.75rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   flex-direction: column;
+  gap: 0.5rem;
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
   background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
+  padding: 1rem;
 }
 
 /* Future section */
