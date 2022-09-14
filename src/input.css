@@ -31,29 +31,6 @@
 }
 
 @layer components {
-  /* Navigation items */
-  .navItem {
-    @apply text-white p-4 relative textShadow;
-  }
-
-  .navItem::after {
-    content: "";
-    height: 2px;
-    width: 0px;
-    background-color: white;
-    border-radius: 100px;
-    display: block;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%) translateY(-3px);
-    transition: width 0.3s ease-in-out;
-    box-shadow: 0 0 3px rgb(0 0 0 / 0.3);
-  }
-
-  .navItem:hover::after {
-    width: calc(100% - 2rem);
-  }
-
   /* Buttons */
   .solidButton,
   .clearButton {
@@ -80,6 +57,34 @@
     backdrop-filter: blur(2px);
     box-shadow: 0 3px 7px rgb(0 0 0 / 0.2);
     z-index: 2;
+  }
+
+  /* Navigation items */
+  .navItem {
+    @apply text-white p-4 relative textShadow;
+  }
+
+  .navItem::after {
+    content: "";
+    height: 2px;
+    width: 0px;
+    background-color: white;
+    border-radius: 100px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-3px);
+    transition: width 0.3s ease-in-out;
+    box-shadow: 0 0 3px rgb(0 0 0 / 0.3);
+  }
+
+  .navItem:hover::after {
+    width: calc(100% - 2rem);
+  }
+
+  /* Dropdown menus */
+  .navItem:hover + menu {
+    @apply bg-white flex flex-col;
   }
 
   /* Future section */
