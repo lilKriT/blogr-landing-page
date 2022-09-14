@@ -60,7 +60,7 @@
   }
 
   header > nav > menu:first-of-type > li {
-    @apply bg-pink-500 relative;
+    @apply relative;
   }
 
   /* Navigation items */
@@ -88,7 +88,12 @@
 
   /* Dropdown menus */
   .navItem + menu {
-    @apply bg-white hidden flex-col gap-2 absolute left-1/2 -translate-x-1/2 rounded translate-y-3 p-4;
+    @apply bg-white scale-0 invisible flex-col gap-2 absolute left-1/2 -translate-x-1/2 rounded translate-y-3 p-4 transition-all duration-300 min-w-[10rem];
+    transform-origin: top;
+  }
+
+  .navItem + menu li:hover {
+    @apply font-bold duration-300;
   }
 
   /* Future section */
