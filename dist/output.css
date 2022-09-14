@@ -630,6 +630,12 @@ header {
   z-index: 2;
 }
 
+header > nav > menu:first-of-type > li {
+  position: relative;
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 72 153 / var(--tw-bg-opacity));
+}
+
 /* Navigation items */
 
 .navItem {
@@ -660,9 +666,14 @@ header {
 
 /* Dropdown menus */
 
-.navItem:hover + menu {
-  display: flex;
+.navItem + menu {
+  position: absolute;
+  left: 50%;
+  display: none;
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   flex-direction: column;
+  border-radius: 0.25rem;
   --tw-bg-opacity: 1;
   background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
 }
@@ -856,10 +867,6 @@ footer .navColumn > *:first-child {
 
 .flex {
   display: flex;
-}
-
-.hidden {
-  display: none;
 }
 
 .h-auto {

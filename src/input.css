@@ -59,6 +59,10 @@
     z-index: 2;
   }
 
+  header > nav > menu:first-of-type > li {
+    @apply bg-pink-500 relative;
+  }
+
   /* Navigation items */
   .navItem {
     @apply text-white p-4 relative textShadow;
@@ -83,8 +87,8 @@
   }
 
   /* Dropdown menus */
-  .navItem:hover + menu {
-    @apply bg-white flex flex-col;
+  .navItem + menu {
+    @apply bg-white hidden flex-col absolute left-1/2 -translate-x-1/2 rounded;
   }
 
   /* Future section */
