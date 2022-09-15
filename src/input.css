@@ -31,27 +31,6 @@
 }
 
 @layer components {
-  /* Buttons */
-  .solidButton,
-  .clearButton {
-    @apply px-6 py-2 rounded-full font-bold duration-300 ease-in-out;
-    box-shadow: 0 0 7px rgb(0 0 0 / 0.3);
-    text-shadow: none;
-  }
-
-  .solidButton {
-    @apply text-lightRed bg-white hover:text-white hover:bg-veryLightRed;
-  }
-
-  .clearButton {
-    @apply bg-transparent border-white border hover:bg-white hover:text-lightRed;
-  }
-
-  .solidButton::after,
-  .clearButton::after {
-    content: none;
-  }
-
   /* Header */
   header {
     backdrop-filter: blur(2px);
@@ -174,6 +153,27 @@
   /* Making first item bold */
   footer .navColumn > *:first-child {
     @apply font-bold mb-4 text-white;
+  }
+
+  /* Buttons */
+  .solidButton,
+  .clearButton {
+    @apply px-6 py-2 rounded-full font-bold duration-300 ease-in-out;
+    box-shadow: 0 0 7px rgb(0 0 0 / 0.3);
+    text-shadow: none;
+  }
+
+  .solidButton {
+    @apply text-lightRed bg-white hover:text-white hover:bg-veryLightRed;
+  }
+
+  .clearButton {
+    @apply bg-transparent border-white border hover:bg-white hover:text-lightRed;
+  }
+
+  .solidButton::after,
+  .clearButton::after {
+    content: none;
   }
 }
 

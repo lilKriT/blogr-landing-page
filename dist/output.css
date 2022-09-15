@@ -572,55 +572,6 @@ h1,
   --tw-backdrop-sepia:  ;
 }
 
-/* Buttons */
-
-.solidButton, 
-  .clearButton {
-  border-radius: 9999px;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  font-weight: 700;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 0 7px rgb(0 0 0 / 0.3);
-  text-shadow: none;
-}
-
-.solidButton {
-  --tw-bg-opacity: 1;
-  background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: hsl(356 100% 66% / var(--tw-text-opacity));
-}
-
-.solidButton:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(355 100% 74% / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: hsl(0 0% 100% / var(--tw-text-opacity));
-}
-
-.clearButton {
-  border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: hsl(0 0% 100% / var(--tw-border-opacity));
-  background-color: transparent;
-}
-
-.clearButton:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: hsl(356 100% 66% / var(--tw-text-opacity));
-}
-
-.solidButton::after,
-  .clearButton::after {
-  content: none;
-}
-
 /* Header */
 
 header {
@@ -793,6 +744,55 @@ footer .navColumn > *:first-child {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: hsl(0 0% 100% / var(--tw-text-opacity));
+}
+
+/* Buttons */
+
+.solidButton, 
+  .clearButton {
+  border-radius: 9999px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 0 7px rgb(0 0 0 / 0.3);
+  text-shadow: none;
+}
+
+.solidButton {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: hsl(356 100% 66% / var(--tw-text-opacity));
+}
+
+.solidButton:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(355 100% 74% / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 100% / var(--tw-text-opacity));
+}
+
+.clearButton {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: hsl(0 0% 100% / var(--tw-border-opacity));
+  background-color: transparent;
+}
+
+.clearButton:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: hsl(356 100% 66% / var(--tw-text-opacity));
+}
+
+.solidButton::after,
+  .clearButton::after {
+  content: none;
 }
 
 .fixed {
@@ -1085,10 +1085,6 @@ footer .navColumn > *:first-child {
 
 .group:hover .group-hover\:visible {
   visibility: visible;
-}
-
-.group:hover .group-hover\:flex {
-  display: flex;
 }
 
 .group:hover .group-hover\:scale-100 {
