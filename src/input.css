@@ -38,16 +38,21 @@
     z-index: 2;
   }
 
+  /* This allows to place dropdowns correctly */
   header > nav > menu:first-of-type > li {
     @apply relative;
   }
 
   /* Navigation items */
   .navItem {
-    @apply text-white p-4 relative textShadow;
+    @apply p-4;
   }
 
-  .navItem::after {
+  .navItem span {
+    @apply text-white textShadow relative;
+  }
+
+  .navItem span::after {
     content: "";
     height: 2px;
     width: 0px;
@@ -61,8 +66,8 @@
     box-shadow: 0 0 3px rgb(0 0 0 / 0.3);
   }
 
-  .navItem:hover::after {
-    width: calc(100% - 2rem);
+  .navItem:hover span::after {
+    width: 100%;
   }
 
   /* Dropdown menus */
