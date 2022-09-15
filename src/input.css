@@ -45,7 +45,7 @@
 
   /* Navigation items */
   .navItem {
-    @apply p-4;
+    @apply p-4 flex justify-center items-center gap-2;
   }
 
   .navItem span {
@@ -66,8 +66,16 @@
     box-shadow: 0 0 3px rgb(0 0 0 / 0.3);
   }
 
-  .navItem:hover span::after {
+  .navItem:hover > span::after {
     width: 100%;
+  }
+
+  .navItem img {
+    @apply inline w-3 h-auto duration-300 ease-in-out;
+  }
+
+  .navItem:hover > img {
+    transform: rotateX(180deg);
   }
 
   /* Dropdown menus */
