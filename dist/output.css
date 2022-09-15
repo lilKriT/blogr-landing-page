@@ -628,6 +628,7 @@ header > nav > menu:first-of-type > li {
   width: 0.75rem;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  filter: drop-shadow(0 0 3px rgb(0 0 0 / 0.3));
 }
 
 .navItem:hover > img {
