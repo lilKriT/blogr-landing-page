@@ -139,8 +139,8 @@
   }
 
   /* Footer */
-  footer > div > div {
-    @apply flex flex-col grow items-start;
+  footer .navColumn {
+    @apply flex flex-col grow items-center lg:items-start mb-8 lg:mb-0;
   }
 
   footer .navColumn > a {
@@ -166,7 +166,7 @@
 
   /* Making first item bold */
   footer .navColumn > *:first-child {
-    @apply font-bold mb-4 text-white;
+    @apply font-bold mb-6 lg:mb-4 text-white;
   }
 
   /* Buttons */
