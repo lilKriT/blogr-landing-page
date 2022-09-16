@@ -91,7 +91,7 @@
 
   /* Future section */
   #future {
-    @apply bg-future bg-no-repeat font-overpass text-veryDarkBlue;
+    @apply lg:bg-future bg-no-repeat font-overpass text-veryDarkBlue;
     background-position: right -45% center;
     background-size: 62vw;
   }

@@ -667,11 +667,19 @@ header > nav > menu:first-of-type > li {
 /* Future section */
 
 #future {
-  background-image: url('../images/illustration-editor-desktop.svg');
   background-repeat: no-repeat;
   font-family: Overpass, sans-serif;
   --tw-text-opacity: 1;
   color: hsl(208 49% 24% / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  #future {
+    background-image: url('../images/illustration-editor-desktop.svg');
+  }
+}
+
+#future {
   background-position: right -45% center;
   background-size: 62vw;
 }
@@ -928,10 +936,6 @@ footer .navColumn > *:first-child {
   width: 100%;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .w-auto {
   width: auto;
 }
@@ -1022,14 +1026,14 @@ footer .navColumn > *:first-child {
   line-height: 1.75rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold {
@@ -1123,8 +1127,21 @@ footer .navColumn > *:first-child {
     display: none;
   }
 
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
+  .lg\:text-left {
+    text-align: left;
+  }
+
   .lg\:text-6xl {
     font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
     line-height: 1;
   }
 
