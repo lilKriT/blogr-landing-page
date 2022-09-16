@@ -202,9 +202,18 @@
     background-repeat: no-repeat;
   }
 
+  .heroGradientM {
+    background-image: url("../images/bg-pattern-intro-mobile.svg"),
+      linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    /* background-image: url("../images/bg-pattern-intro-desktop.svg"); */
+    background-size: 250vw, 100%;
+    background-position: left -55vw bottom -97vw, center;
+    background-repeat: no-repeat;
+  }
+
   .infrastructureGradient {
     background-image: url("../images/bg-pattern-circles.svg"),
-      linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+      linear-gradient(to top, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
     background-repeat: no-repeat;
     background-size: 80vw, 100%;
     background-position: left -25vw top -40vw, center;
