@@ -124,13 +124,6 @@
   }
 
   /* Features section */
-  #features {
-    background-image: url("../images/illustration-laptop-desktop.svg");
-    background-repeat: no-repeat;
-    background-position: left -54% center;
-    background-size: 65%;
-  }
-
   #features h2 {
     @apply text-veryDarkBlue font-bold text-2xl mb-4;
   }
@@ -218,6 +211,13 @@
     background-repeat: no-repeat;
     background-size: 80vw, 100%;
     background-position: left -25vw top -40vw, center;
+  }
+
+  .featuresBackground {
+    background-image: url("../images/illustration-laptop-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: left -54% center;
+    background-size: 65%;
   }
 
   .textShadow {

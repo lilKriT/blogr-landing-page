@@ -714,13 +714,6 @@ header > nav > menu:first-of-type > li {
 
 /* Features section */
 
-#features {
-  background-image: url("../images/illustration-laptop-desktop.svg");
-  background-repeat: no-repeat;
-  background-position: left -54% center;
-  background-size: 65%;
-}
-
 #features h2 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
@@ -881,6 +874,16 @@ footer .navColumn > *:first-child:hover {
 .my-12 {
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.my-24 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 .mt-10 {
@@ -1090,6 +1093,14 @@ footer .navColumn > *:first-child:hover {
   color: hsl(240 2% 79% / var(--tw-text-opacity));
 }
 
+.outline {
+  outline-style: solid;
+}
+
+.outline-red-300 {
+  outline-color: #fca5a5;
+}
+
 .duration-300 {
   transition-duration: 300ms;
 }
@@ -1117,6 +1128,13 @@ footer .navColumn > *:first-child:hover {
   background-position: left -25vw top -40vw, center;
 }
 
+.featuresBackground {
+  background-image: url("../images/illustration-laptop-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: left -54% center;
+  background-size: 65%;
+}
+
 .iconShadow {
   filter: drop-shadow(0 0 3px rgb(0 0 0 / 0.3));
 }
@@ -1128,11 +1146,6 @@ footer .navColumn > *:first-child:hover {
     very dark gray blue: hsl(237, 17%, 21%)
     very dark desaturated blue: hsl(237, 23%, 32%)
 */
-
-.after\:content-\[\'none\'\]::after {
-  --tw-content: 'none';
-  content: var(--tw-content);
-}
 
 .hover\:scale-110:hover {
   --tw-scale-x: 1.1;
@@ -1165,6 +1178,10 @@ footer .navColumn > *:first-child:hover {
 
   .lg\:w-1\/2 {
     width: 50%;
+  }
+
+  .lg\:basis-1\/2 {
+    flex-basis: 50%;
   }
 
   .lg\:flex-row {
@@ -1200,5 +1217,12 @@ footer .navColumn > *:first-child:hover {
     background-size: 210vw, 100%;
     background-position: left -30vw bottom -82vw, center;
     background-repeat: no-repeat;
+  }
+
+  .lg\:featuresBackground {
+    background-image: url("../images/illustration-laptop-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: left -54% center;
+    background-size: 65%;
   }
 }
