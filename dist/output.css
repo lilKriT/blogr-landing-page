@@ -657,6 +657,7 @@ header > nav > menu:first-of-type > li {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
   transform-origin: top;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
 }
 
 .navItem + menu li:hover {

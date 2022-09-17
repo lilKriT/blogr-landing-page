@@ -83,6 +83,7 @@
   .navItem + menu {
     @apply bg-white scale-0 invisible flex-col gap-2 absolute left-1/2 -translate-x-1/2 rounded translate-y-3 p-4 transition-all duration-300 min-w-[10rem];
     transform-origin: top;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
   }
 
   .navItem + menu li:hover {
