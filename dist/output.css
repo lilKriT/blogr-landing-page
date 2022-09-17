@@ -930,6 +930,34 @@ footer .navColumn > *:first-child:hover {
   margin-bottom: 1.5rem;
 }
 
+.-mt-10 {
+  margin-top: -2.5rem;
+}
+
+.-mt-20 {
+  margin-top: -5rem;
+}
+
+.-mt-\[50vw\] {
+  margin-top: -50vw;
+}
+
+.mt-\[5vw\] {
+  margin-top: 5vw;
+}
+
+.mt-\[50vw\] {
+  margin-top: 50vw;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-40 {
+  margin-bottom: 10rem;
+}
+
 .block {
   display: block;
 }
@@ -1145,6 +1173,18 @@ footer .navColumn > *:first-child:hover {
 
   .lg\:-ml-4 {
     margin-left: -1rem;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .lg\:mt-20 {
+    margin-top: 5rem;
   }
 
   .lg\:flex {
