@@ -758,7 +758,7 @@ footer .navColumn > a {
   padding-bottom: 0.25rem;
 }
 
-footer .navColumn > a::after {
+.underlined::after {
   content: "";
   height: 2px;
   width: 0px;
@@ -771,7 +771,7 @@ footer .navColumn > a::after {
   transition: width 0.3s ease-in-out;
 }
 
-footer .navColumn > a:hover::after {
+.underlined:hover::after {
   width: calc(100% - 1rem);
 }
 
@@ -782,6 +782,14 @@ footer .navColumn > *:first-child {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: hsl(0 0% 100% / var(--tw-text-opacity));
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+footer .navColumn > *:first-child:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @media (min-width: 1024px) {
@@ -1119,6 +1127,11 @@ footer .navColumn > *:first-child {
     very dark gray blue: hsl(237, 17%, 21%)
     very dark desaturated blue: hsl(237, 23%, 32%)
 */
+
+.after\:content-\[\'none\'\]::after {
+  --tw-content: 'none';
+  content: var(--tw-content);
+}
 
 .hover\:scale-110:hover {
   --tw-scale-x: 1.1;
