@@ -5,6 +5,8 @@ console.log("Script loaded");
 const openMobileMenuButton = document.querySelector("#openMobileMenuButton");
 const closeMobileMenuButton = document.querySelector("#closeMobileMenuButton");
 
+const mobileMenu = document.querySelector(".mobileMenu");
+
 // Functions
 const openMobileMenu = () => {
   console.log("Opening mobile menu");
@@ -13,6 +15,8 @@ const openMobileMenu = () => {
   openMobileMenuButton.classList.add("hidden");
   closeMobileMenuButton.classList.remove("hidden");
   closeMobileMenuButton.classList.add("block");
+
+  mobileMenu.classList.add("opened");
 };
 openMobileMenuButton.addEventListener("click", openMobileMenu);
 
@@ -23,5 +27,7 @@ const closeMobileMenu = () => {
   closeMobileMenuButton.classList.add("hidden");
   openMobileMenuButton.classList.remove("hidden");
   openMobileMenuButton.classList.add("block");
+
+  mobileMenu.classList.remove("opened");
 };
 closeMobileMenuButton.addEventListener("click", closeMobileMenu);
