@@ -91,11 +91,20 @@
         </menu>
 
         <!-- Mobile Menu Button -->
-        <img
-          src="./images/icon-hamburger.svg"
-          alt="Mobile Menu"
-          class="block lg:hidden cursor-pointer p-2 ml-auto -mr-2 iconShadow"
-        />
+        <div class="block lg:hidden ml-auto -mr-2">
+          <img
+            src="./images/icon-hamburger.svg"
+            alt="Mobile Menu"
+            class="cursor-pointer p-2 iconShadow"
+            id="openMobileMenuButton"
+          />
+          <img
+            src="./images/icon-hamburger.svg"
+            alt="Mobile Menu"
+            class="hidden cursor-pointer p-2 iconShadow"
+            id="closeMobileMenuButton"
+          />
+        </div>
 
         <!-- Mobile Menu Dropdown -->
         <menu class="mobileMenu">
