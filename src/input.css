@@ -13,7 +13,7 @@
 @layer base {
   /* For testing purposes */
   * {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
   }
 
   /* Body font */
@@ -193,11 +193,15 @@
   }
 
   .mobileNavItem {
-    @apply font-bold text-lg text-veryDarkBlue p-4;
+    @apply font-bold text-lg text-veryDarkBlue w-full flex flex-col items-center;
+  }
+
+  .mobileNavItem a {
+    @apply p-2 inline-block;
   }
 
   .mobileDropDown {
-    @apply font-normal text-base bg-grayishBlue;
+    @apply font-normal text-base bg-grayishBlue w-full;
   }
 }
 
