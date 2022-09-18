@@ -851,7 +851,7 @@ footer .navColumn > *:first-child:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 0.25rem;
   border-radius: 0.75rem;
   --tw-bg-opacity: 1;
   background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
@@ -859,6 +859,23 @@ footer .navColumn > *:first-child:hover {
   top: 15vh;
   height: 80vh;
   box-shadow: 0 10px 15px rgb(0 0 0 / 0.3);
+}
+
+.mobileNavItem {
+  padding: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: hsl(208 49% 24% / var(--tw-text-opacity));
+}
+
+.mobileDropDown {
+  --tw-bg-opacity: 1;
+  background-color: hsl(240 2% 79% / var(--tw-bg-opacity));
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
 }
 
 .fixed {
