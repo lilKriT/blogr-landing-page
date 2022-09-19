@@ -7,6 +7,8 @@ const closeMobileMenuButton = document.querySelector("#closeMobileMenuButton");
 
 const mobileMenu = document.querySelector(".mobileMenu");
 
+const mobileDropDowns = document.querySelectorAll(".mobileDropDown");
+
 // Functions
 const openMobileMenu = () => {
   console.log("Opening mobile menu");
@@ -31,3 +33,12 @@ const closeMobileMenu = () => {
   mobileMenu.classList.remove("opened");
 };
 closeMobileMenuButton.addEventListener("click", closeMobileMenu);
+
+const toggleMobileDropDown = () => {
+  console.log("clicked");
+};
+mobileDropDowns.forEach((el) => {
+  // console.log("1");
+  console.log(el.parentNode);
+  el.parentNode.classList.toggle("opened");
+});
