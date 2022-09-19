@@ -212,7 +212,7 @@
   .mobileDropDown {
     @apply font-normal text-base bg-grayishBlue w-full flex flex-col gap-1 items-center rounded-lg my-2;
     @apply font-bold text-veryDarkGrayishBlue;
-    background-color: #ddd;
+    background-color: #eee;
   }
 
   .mobileDropDown {

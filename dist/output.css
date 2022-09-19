@@ -906,7 +906,7 @@ footer .navColumn > *:first-child:hover {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: hsl(207 13% 34% / var(--tw-text-opacity));
-  background-color: #ddd;
+  background-color: #eee;
   padding: 0.5rem;
 }
 
