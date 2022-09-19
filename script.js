@@ -37,8 +37,13 @@ closeMobileMenuButton.addEventListener("click", closeMobileMenu);
 const toggleMobileDropDown = (e) => {
   console.log(e.currentTarget);
   e.currentTarget.parentNode.classList.toggle("opened");
+  // e.currentTarget.children[1].style.maxHeight = "100px";
+  const dropDown = e.currentTarget.parentNode.children[1];
+  dropDown.setAttribute("height", dropDown.scrollHeight);
 };
 console.log(mobileDropDowns.length);
 mobileDropDowns.forEach((el) => {
-  el.previousElementSibling.addEventListener("click", toggleMobileDropDown);
+  const element = el.previousElementSibling;
+  element.addEventListener("click", toggleMobileDropDown);
+  // console.log(el.getBoundingClientRect());
 });

@@ -220,9 +220,18 @@
     @apply font-normal text-base bg-grayishBlue w-full flex flex-col gap-1 items-center rounded-lg my-2;
     @apply font-bold text-veryDarkGrayishBlue;
     background-color: #eee;
-    visibility: hidden;
+    /* display: none; */
     /* transform: scale(0); */
     max-height: 0;
+    /* transition-duration: 0.3s; */
+    /* visibility: hidden; */
+    /* overflow: hidden; */
+  }
+
+  .mobileNavItem.opened .mobileDropDown {
+    /* visibility: visible;
+    max-height: max-content; */
+    /* display: flex; */
   }
 }
 
