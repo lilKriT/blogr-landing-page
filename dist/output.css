@@ -860,10 +860,17 @@ footer .navColumn > *:first-child:hover {
   height: 80vh;
   box-shadow: 0 10px 15px rgb(0 0 0 / 0.3);
   visibility: hidden;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+  transform-origin: top right;
+  transform: scale(0);
+  opacity: 0;
 }
 
 .mobileMenu.opened {
   visibility: visible;
+  transform: scale(1);
+  opacity: 1;
 }
 
 .mobileNavItem {
