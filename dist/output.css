@@ -914,9 +914,9 @@ footer .navColumn > *:first-child:hover {
   --tw-text-opacity: 1;
   color: hsl(207 13% 34% / var(--tw-text-opacity));
   background-color: #eee;
-  /* visibility: hidden; */
+  visibility: hidden;
   /* transform: scale(0); */
-  /* max-height: 0; */
+  max-height: 0;
 }
 
 .fixed {

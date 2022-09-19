@@ -220,9 +220,9 @@
     @apply font-normal text-base bg-grayishBlue w-full flex flex-col gap-1 items-center rounded-lg my-2;
     @apply font-bold text-veryDarkGrayishBlue;
     background-color: #eee;
-    /* visibility: hidden; */
+    visibility: hidden;
     /* transform: scale(0); */
-    /* max-height: 0; */
+    max-height: 0;
   }
 }
 

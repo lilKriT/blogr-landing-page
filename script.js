@@ -34,11 +34,13 @@ const closeMobileMenu = () => {
 };
 closeMobileMenuButton.addEventListener("click", closeMobileMenu);
 
-const toggleMobileDropDown = () => {
-  console.log("clicked");
+const toggleMobileDropDown = (e) => {
+  // console.log("clicked");
+  console.log(e.currentTarget);
 };
 mobileDropDowns.forEach((el) => {
   // console.log("1");
-  console.log(el.parentNode);
-  el.parentNode.classList.toggle("opened");
+  // console.log(el.parentNode);
+  // el.parentNode.classList.toggle("opened");
+  el.parentNode.addEventListener("click", toggleMobileDropDown);
 });
