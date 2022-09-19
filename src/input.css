@@ -13,7 +13,7 @@
 @layer base {
   /* For testing purposes */
   * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
   }
 
   /* Body font */
@@ -222,8 +222,9 @@
     background-color: #eee;
     /* display: none; */
     /* transform: scale(0); */
-    max-height: 0;
-    /* transition-duration: 0.3s; */
+    max-height: 0px;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
     /* visibility: hidden; */
     overflow: hidden;
   }
@@ -232,7 +233,7 @@
     /* visibility: visible;
     max-height: max-content; */
     /* display: flex; */
-    max-height: attr(height px);
+    /* max-height: attr(height px); */
     /* content: attr(height px); */
   }
 }

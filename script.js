@@ -36,14 +36,23 @@ closeMobileMenuButton.addEventListener("click", closeMobileMenu);
 
 const toggleMobileDropDown = (e) => {
   // console.log(e.currentTarget);
-  e.currentTarget.parentNode.classList.toggle("opened");
   // e.currentTarget.children[1].style.maxHeight = "100px";
+  const parent = e.currentTarget.parentNode;
+  const dropDown = parent.children[1];
+
+  parent.classList.toggle("opened");
+  if (parent.classList.contains("opened")) {
+    // dropDown.style.maxHeight = dropDown.getAttribute("height");
+    dropDown.style.maxHeight = dropDown.scrollHeight + "px";
+  } else {
+    dropDown.style.maxHeight = "0px";
+  }
 };
 console.log(mobileDropDowns.length);
 mobileDropDowns.forEach((el) => {
   const element = el.previousElementSibling;
   element.addEventListener("click", toggleMobileDropDown);
-  const dropDown = el.parentNode.children[1];
-  dropDown.setAttribute("height", dropDown.scrollHeight);
+  // const dropDown = el.parentNode.children[1];
+  // dropDown.setAttribute("height", dropDown.scrollHeight + "px");
   // console.log(el.getBoundingClientRect());
 });
