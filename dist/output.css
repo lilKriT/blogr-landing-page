@@ -919,13 +919,15 @@ footer .navColumn > *:first-child:hover {
   max-height: 0;
   /* transition-duration: 0.3s; */
   /* visibility: hidden; */
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .mobileNavItem.opened .mobileDropDown {
   /* visibility: visible;
     max-height: max-content; */
   /* display: flex; */
+  max-height: attr(height px);
+  /* content: attr(height px); */
 }
 
 .fixed {
