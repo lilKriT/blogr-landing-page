@@ -914,21 +914,18 @@ footer .navColumn > *:first-child:hover {
   --tw-text-opacity: 1;
   color: hsl(207 13% 34% / var(--tw-text-opacity));
   background-color: #eee;
-  /* display: none; */
-  /* transform: scale(0); */
   max-height: 0px;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
-  /* visibility: hidden; */
   overflow: hidden;
 }
 
-.mobileNavItem.opened .mobileDropDown {
-  /* visibility: visible;
-    max-height: max-content; */
-  /* display: flex; */
-  /* max-height: attr(height px); */
-  /* content: attr(height px); */
+.mobileNavItem img {
+  transition: 0.3s ease-in-out;
+}
+
+.mobileNavItem.opened img {
+  transform: rotate(180deg);
 }
 
 .fixed {
