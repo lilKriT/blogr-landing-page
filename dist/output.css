@@ -928,6 +928,23 @@ footer .navColumn > *:first-child:hover {
   transform: rotate(180deg);
 }
 
+a.mobileSignUp {
+  display: block;
+  border-radius: 9999px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background: linear-gradient(
+      to right,
+      hsl(13, 100%, 72%),
+      hsl(353, 100%, 62%)
+    );
+}
+
 .fixed {
   position: fixed;
 }
@@ -1091,6 +1108,15 @@ footer .navColumn > *:first-child:hover {
 
 .rounded-bl-\[10rem\] {
   border-bottom-left-radius: 10rem;
+}
+
+.border-t {
+  border-top-width: 1px;
+}
+
+.border-grayishBlue {
+  --tw-border-opacity: 1;
+  border-color: hsl(240 2% 79% / var(--tw-border-opacity));
 }
 
 .bg-veryDarkBlackBlue {

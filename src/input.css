@@ -233,6 +233,15 @@
   .mobileNavItem.opened img {
     transform: rotate(180deg);
   }
+
+  a.mobileSignUp {
+    @apply block px-8 py-2 rounded-full font-bold duration-300 ease-in-out;
+    background: linear-gradient(
+      to right,
+      hsl(13, 100%, 72%),
+      hsl(353, 100%, 62%)
+    );
+  }
 }
 
 @layer utilities {
